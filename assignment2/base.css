@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+header {
+  display:flex;
+  flex-direction: row;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 0 300px;
+  height: 45px;
+}
+.left_box {
+  display: flex;
+  flex-direction: row;
+  width:50%;
+}
+.favicon_frame {
+  width: 70px;
+  vertical-align: middle;
+}
+.faviconFrame{
+  height:29px;
+}
+.logo {
+  height:29px;
+  width:103px;
+}
+.right_box{
+  display: flex;
+  flex-direction: row-reverse;
+  width:50%;
+}
+.heart, .myInfo{
+  width: 22px;
+  height: 22px;
+}
+.myInfo_box{
+  width: 70px;
+}
