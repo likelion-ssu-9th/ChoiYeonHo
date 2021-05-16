@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+</head>
+<body>
+    <div style="text-align: center">
+        <h1>Blog</h1>
+        {% for blog in blogs %}
+        <div>
+            <h2>제목 : {{blog.title}}</h2>
+            <div>날짜 : {{blog.pub_date}}</div>
+            <div>본문 : {{blog.summary}} <a href="{% url 'detail' blog.id %}">...more</a></div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
